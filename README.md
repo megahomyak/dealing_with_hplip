@@ -13,13 +13,11 @@ Since this garbage breaks down every time I restart by laptop, and does it to th
 ### Installing HPLIP again
 
 * Download an AppImage from their website
-* Run the AppImage and go through a tedious process of pressing buttons when prompts appear (this is how babysitting feels like, probably). This can't even be automated with `yes` or similar tools, this stupid darn thing runs some shell of its own if it detects a pipe! Also, their `--auto` mode just crashes with an "UnboundLocalError: local variable 'bClassDriver' referenced before assignment"
-* After running the thing, it will tell you that some darn thing failed and you need to run `hp-setup` *manually*. Damn nice *installers* you have here, HP! I'm so fucking tired of this shit...
-* IDK what exactly makes it work, but it seems like either running `hp-setup` once (and seeing it fail as well) or not running it at all (maybe it's not required) makes the utility give you a dialogue window upon printer reconnection. That dialogue installs stuff correctly
+* Run the AppImage and go through a tedious process of pressing buttons when prompts appear (this is how babysitting feels like, probably). This can't even be automated with `yes` or similar tools, this stupid darn thing runs some shell of its own if it detects a pipe! Also, their `--auto` mode just crashes with an "UnboundLocalError: local variable 'bClassDriver' referenced before assignment". After running the thing, it will tell you that some darn thing failed and you need to run `hp-setup` *manually*. (You don't, though.) Damn nice *installers* you have here, HP! I'm so fucking tired of this shit...
+* After all this, turning the printer off and back on while it is plugged in makes the utility give you a dialogue window upon printer reconnection. That dialogue installs stuff correctly
 
 ### Recap
 
-* `sudo hp-uninstall`
+* `yes | sudo hp-uninstall`
 * Run the installer AppImage
-* Run `hp-setup`?
-* Replug the printer and follow on-screen instructions
+* Turn the printer off and back on and follow on-screen instructions

@@ -21,3 +21,7 @@ Since this garbage breaks down every time I restart by laptop, and does it to th
 * `yes | sudo hp-uninstall`
 * Run the installer AppImage, proceed until it won't be able to find your printer
 * Turn the printer off and back on and follow on-screen instructions
+
+## If it still does not work
+
+Literally change the HP printer to a printer from a different manufacturer which will not have a shit ton of issues with its software. HPLIP is literally the buggiest piece of shit I've ever worked with, nothing was worse than that
